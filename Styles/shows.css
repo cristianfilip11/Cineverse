@@ -1,0 +1,81 @@
+body 
+{
+  background-color: rgba(30, 30, 30, 1);
+}
+/*
+ul {
+  position: fixed;
+  top:  0;
+  width:   100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  rgba(30, 30, 30, 1);
+}
+
+li {
+  float: right;
+  font-family: 'Poppins';
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+  
+}
+li a:hover:not(.active) {
+  background-color: #333333;
+}
+.active{
+  background-color: rgba(189, 253, 109, 1) ;
+  color: rgba(30, 30, 30, 1);
+}
+li2{
+  float: left; 
+  font-family: 'Anton';
+  font-size: 32px;
+}
+
+*/
+/* Menu Icon */
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+  
+}/* Style label tag */
+
+.hamb-line {
+  background: var(--white);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+  background: var(--white);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.hamb-line::before{
+  top: 5px;
+}
+.hamb-line::after{
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+} /* Hide checkbox */
