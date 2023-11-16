@@ -163,6 +163,7 @@ img {
     color: rgba(189, 253, 109, 1);
     font-family: "Poppins";
     font-size: 2vw;
+    text-align: center;
   }
   .navb {
     grid-area: 1 / 1 / 2 / 21;

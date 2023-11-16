@@ -1,29 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies</title>
-   
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
-    <link rel="stylesheet" href="Styles/shows.css">
-</head>
-<body>
+<html>
+  <head>
+    <title>TV Shows - cineverse.</title>
 
-    <input class="side-menu" type="checkbox" id="side-menu"/>
-    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-    <nav>
-        <ul>    
-            <!--<li style = "float:left;font-family: 'Anton'; font-size: 32px"><a href="about.asp">cineverse.</a></li>-->
-            
-            
-            <li><a href="news.asp">News</a></li>
-            <li><a class="active" href="shows.html">TV Shows</a></li>
-            <li><a href="movies.html">Movies</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li2><a href="index.html">cineverse.</a></li2>
-        </ul>
-    </nav> 
-</body>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Assets/favicon-16x16.png"
+    />
+
+    <link rel="stylesheet" href="Styles/movies.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Styles/global.css" />
+
+    <section class="top-nav">
+      <div class="brand">cineverse.</div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a class="active" href="shows.html">TV Shows</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="history.html">History</a></li>
+      </ul>
+    </section>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="text">
+        <b>Browse our collection and discover popular TV Shows</b>
+      </div>
+
+      <div class="div2">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="/Assets/serial_bettercallsaul.jpg"
+                alt="Better Call Saul Poster"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Better Call Saul</h1>
+              <p>2015-2022</p>
+              <p>Created by: Vince Gilligan, Peter Gould</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div2-text">
+        <b>
+          Better Call Saul <br />
+          2015-2022
+        </b>
+      </div>
+
+      <div class="div3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/Assets/serial_breakingbad.jpg" alt="Breaking Bad" />
+            </div>
+            <div class="flip-card-back">
+              <h1>Breaking Bad</h1>
+              <p>2008-2013</p>
+              <p>Created by: Vince Gilligan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div3-text">
+        <b>
+          Breaking Bad <br />
+          2008-2013
+        </b>
+      </div>
+
+      <div class="div4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/Assets/serial_mrrobot.jpg" alt="Mr Robot" />
+            </div>
+            <div class="flip-card-back">
+              <h1>Mr Robot</h1>
+              <p>2015–2019</p>
+              <p>Created by: Sam Esmail</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div4-text">
+        <b>
+          Mr Robot <br />
+          2015–2019
+        </b>
+      </div>
+
+      <div class="div5">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="/Assets/serial_severance.jpg"
+                alt="serial_severance.jpg"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Severance</h1>
+              <p>2022-</p>
+              <p>Created by: Dan Erickson</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div5-text">
+        <b>
+          Severance <br />
+          2022-
+        </b>
+      </div>
+
+      <div class="div6">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="/Assets/serial_succession.jpeg"
+                alt="serial_succession"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>Succession</h1>
+              <p>2018–2023</p>
+              <p>Directed by: Damien Chazelle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div6-text">
+        <b>
+          Succession <br />
+          2018–2023
+        </b>
+      </div>
+
+      <div class="div7">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="/Assets/serial_theboys.jpg" alt="serial_theboys" />
+            </div>
+            <div class="flip-card-back">
+              <h1>The Boys</h1>
+              <p>2019–</p>
+              <p>Created by: Eric Kripke</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div7-text">
+        <b>
+          The Boys <br />
+          2019–
+        </b>
+      </div>
+    </div>
+  </body>
 </html>
