@@ -1,0 +1,108 @@
+.gallery {
+  --s: 150px; /* control the size */
+  --g: 10px; /* control the gap */
+  --f: 1.5; /* control the scale factor */
+
+  display: grid;
+  gap: var(--g);
+  width: calc(3 * var(--s) + 2 * var(--g));
+  aspect-ratio: 1;
+  grid-template-columns: repeat(3, auto);
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: scale-down;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: 0.35s linear;
+}
+
+.gallery img:hover {
+  filter: grayscale(0);
+  width: calc(var(--s) * var(--f));
+  height: calc(var(--s) * var(--f));
+}
+
+.gallery2 {
+  --s: 150px; /* control the size */
+  --g: 10px; /* control the gap */
+  --f: 1.5; /* control the scale factor */
+
+  display: grid;
+  gap: var(--g);
+  width: calc(3 * var(--s) + 2 * var(--g));
+  aspect-ratio: 1;
+  grid-template-columns: repeat(3, auto);
+}
+
+.gallery2 > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: scale-down;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: 0.35s linear;
+}
+
+.gallery2 img:hover {
+  filter: grayscale(0);
+  width: calc(var(--s) * var(--f));
+  height: calc(var(--s) * var(--f));
+}
+
+@media (min-width: 768px) {
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(30, 7vh);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: rgba(30, 30, 30, 1);
+  }
+  .gallery {
+    grid-area: 6 / 8 / 20 /17;
+  }
+  .text {
+    grid-area: 2 / 7 / 2 /17;
+    font-size: 3vw;
+    font-family: "Poppins";
+  }
+  .rule1 {
+    grid-area: 4 / 5 / 4 /17;
+    font-size: 3vw;
+    font-family: "Poppins";
+    text-align: center;
+    color: rgba(189, 253, 109, 1);
+  }
+  .text_small {
+    grid-area: 15 / 6 / 15 /17;
+    font-family: "Poppins";
+    text-align: center;
+  }
+  .rule2 {
+    grid-area: 18 / 5 / 18 /17;
+    font-size: 3vw;
+    font-family: "Poppins";
+    text-align: center;
+    color: rgba(189, 253, 109, 1);
+  }
+
+  .gallery2 {
+    grid-area: 20 / 8 / 40 /17;
+  }
+  top-nav {
+    grid-area: 1 / 1 / 2 / 21;
+    background-color: rgba(30, 30, 30, 1);
+  }
+  .text_small2 {
+    grid-area: 29 / 6 / 40 /17;
+    font-family: "Poppins";
+    text-align: center;
+  }
+}
